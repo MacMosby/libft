@@ -29,6 +29,8 @@ B_OBJ := $(B_SRC:%.c=%.o)
 
 HEADER := libft.h
 
+CC := cc
+
 FLAGS := -Wall -Wextra -Werror
 
 all: $(NAME)
@@ -37,13 +39,13 @@ $(NAME): $(OBJ) $(HEADER)
 	ar rcs $(NAME) $(OBJ)
 
 $(OBJ):
-	cc $(FLAGS) -c $(SRC)
+	$(CC) $(FLAGS) -c $(SRC)
 
 bonus: $(B_OBJ) $(HEADER)
 	ar rcs $(NAME) $(B_OBJ)
 
 $(B_OBJ):
-	cc $(FLAGS) -c $(B_SRC)
+	$(CC) $(FLAGS) -c $(B_SRC)
 
 clean:
 	rm -f *.o
