@@ -3,21 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrodenbu <mrodenbu@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: marcrodenbusch <marcrodenbusch@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 14:35:23 by mrodenbu          #+#    #+#             */
-/*   Updated: 2023/07/06 13:02:17 by mrodenbu         ###   ########.fr       */
+/*   Updated: 2024/09/09 23:30:11 by marcrodenbu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+//# include <bsd/string.h>
 # include <ctype.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
-
+# include <unistd.h>
 
 typedef struct s_list
 {

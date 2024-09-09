@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrodenbu <mrodenbu@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: marcrodenbusch <marcrodenbusch@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 14:45:50 by mrodenbu          #+#    #+#             */
-/*   Updated: 2023/07/03 12:06:57 by mrodenbu         ###   ########.fr       */
+/*   Updated: 2024/09/09 23:31:06 by marcrodenbu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,8 @@
 static int	ft_get_size(long int n)
 {
 	int	size;
-	int	i;
 
 	size = 1;
-	i = 0;
 	if (n < 0)
 	{
 		n *= -1;
